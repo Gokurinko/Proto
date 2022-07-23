@@ -92,12 +92,33 @@
                         shopify</span> or any <span class="accent">beginner
                         project</span> I can help
                     with ?</p>
-                <div class="a">
-                    Reach out
+                <div id="contacting">
+                    <form onsubmit="sendEmail(); reset(); return false;">
+                        <input type="text" id="formName" placeholder="Your name" required>
+                        <input type="email" id="formMail" placeholder="Your email" required>
+                        <textarea id="formMessage" placeholder="How can I help you ?" required></textarea>
+                        <button type="submit">Reach out</button>
+                    </form>
                 </div>
             </div>
         </div>
     </div>
+    <script src="https://smtpjs.com/v3/smtp.js"></script>
+    <script>
+        function sendEmail() {
+            Email.send({
+                Host: "smtp.gmail.com",
+                Username: "unknown.soldier987@gmail.com",
+                Password: "motdepass",
+                To: 'ilias.abdelkhaled@gmail.com',
+                From: document.getElementById("formMail").value,
+                Subject: "New inquiry",
+                Body: "Name" + document.getElementById("formName").value + "<br> Mail" + document.getElementById("formMail").value + "<br> Message" + document.getElementById("formMessage").value,
+            }).then(
+                message => alert(message)
+            );
+        }
+    </script>
     <script src="app.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa"
