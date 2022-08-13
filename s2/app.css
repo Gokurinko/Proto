@@ -12,7 +12,6 @@ body {
     padding: 0;
     font-family: sans-serif;
     background-color: white;
-    scroll-behavior: smooth;
 }
 
 .navbar {
@@ -301,14 +300,9 @@ h2 {
 }
 
 @media (max-width: 55em) {
-    .card {
-        flex-direction: column;
-    }
-
     .card .img {
         width: 120px;
         height: 100px;
-
     }
 
     #h1 {
@@ -317,8 +311,6 @@ h2 {
 }
 
 @media (max-width: 35em) {
-
-
     .content {
         width: 80%;
     }
@@ -329,6 +321,7 @@ h2 {
 
     #h1,
     .cntr::after,
+    .card .img,
     #cnt2 h2::after,
     #cnt4 h2::after,
     #cnt3 h2 ::after,
@@ -338,14 +331,5 @@ h2 {
 
     #cnt1 {
         font-size: smaller;
-    }
-}
-
-@media (min-width: 720px) {
-
-    #p1,
-    #p2,
-    #p3 {
-        justify-content: space-around;
     }
 }

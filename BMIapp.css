@@ -1,0 +1,92 @@
+:root {
+    --d-color: rgba(0, 0, 0, 1);
+    --w-color: #fff;
+    --g-color: rgb(70, 69, 69);
+    --acc-color: #09134e;
+    --pop-color: #64c1b0;
+}
+
+body {
+    background-color: rgb(1, 4, 23);
+}
+
+h1 {
+    color: var(--w-color);
+    text-align: center;
+    font-size: 40px;
+    font-weight: 600;
+}
+
+form {
+    display: flex;
+    width: 100vw;
+    height: 70px;
+    align-content: space-between;
+    flex-wrap: wrap;
+}
+
+.formCard,
+.card {
+    width: 100vw;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.formCard {
+    align-content: space-between
+}
+
+.calc {
+    background-color: var(--w-color);
+    color: var(--pop-color);
+    font-size: 20px;
+    font-weight: 600;
+    border: 2px solid var(--pop-color);
+    border-radius: 2em;
+    display: block;
+    margin: auto;
+}
+
+.textForm {
+    background-color: var(--w-color);
+    color: black;
+    font-size: 15px;
+    font-weight: 400;
+    border: 2px solid var(--pop-color);
+    width: 30%;
+    height: 20px;
+    margin: auto;
+}
+
+.card {
+    margin: 2rem auto;
+    padding: auto 2rem;
+    justify-content: center;
+}
+
+.resultText {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 2em;
+}
+
+#results,
+#bmi {
+    color: var(--w-color);
+    font-size: 25px;
+}
+
+#bmi {
+    margin: auto 30px;
+    font-weight: 600;
+}
+
+#imgHolder {
+    height: 300px;
+    width: fit-content;
+}
+
+img {
+    border-radius: 50%;
+}
