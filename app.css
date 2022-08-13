@@ -349,3 +349,7 @@ h2 {
         justify-content: space-around;
     }
 }
+
+.site:hover {
+    cursor: pointer;
+}
